@@ -3,7 +3,7 @@ package ru.study.task2;
 public class Circle {
     private double radius;
 
-    Circle(double radius) {
+    public Circle(double radius) {
         this.radius = radius;
     }
 
