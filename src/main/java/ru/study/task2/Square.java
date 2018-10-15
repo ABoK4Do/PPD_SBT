@@ -1,4 +1,4 @@
-package study;
+package ru.study.task2;
 
 public class Square {
     public static double square(double a) {

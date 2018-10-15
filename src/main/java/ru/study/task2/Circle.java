@@ -1,4 +1,4 @@
-package study;
+package ru.study.task2;
 
 public class Circle {
     public static double square(double r) {
