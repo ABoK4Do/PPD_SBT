@@ -1,9 +1,15 @@
 package ru.study.task2;
 
 public class Square {
-    public static double square(double a) {
+    private double a;
+
+    Square(double a){
+        this.a = a;
+    }
+
+    public double square() {
         if (a < 0) {
-            throw new NumberFormatException();
+            throw new IllegalArgumentException();
         }
         return a * a;
     }

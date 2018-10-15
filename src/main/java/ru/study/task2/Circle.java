@@ -1,10 +1,16 @@
 package ru.study.task2;
 
 public class Circle {
-    public static double square(double r) {
-        if (r < 0) {
-            throw new NumberFormatException();
+    private double radius;
+
+    Circle(double radius) {
+        this.radius = radius;
+    }
+
+    public double square() {
+        if (radius < 0) {
+            throw new IllegalArgumentException();
         }
-        return Math.PI * r * r;
+        return Math.PI * radius * radius;
     }
 }
