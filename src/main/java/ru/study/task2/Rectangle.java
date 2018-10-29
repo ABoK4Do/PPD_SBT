@@ -1,6 +1,6 @@
 package ru.study.task2;
 
-public class Rectangle {
+public class Rectangle extends Shape{
     private double a;
     private double b;
 
@@ -9,7 +9,8 @@ public class Rectangle {
         this.b = b;
     }
 
-    public double square() {
+    @Override
+    public double getArea() {
         if (a < 0 || b < 0) {
             throw new IllegalArgumentException();
         }
